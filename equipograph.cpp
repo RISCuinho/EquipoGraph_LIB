@@ -1,4 +1,4 @@
-#include "equipographlib.h"
+#include "equipograph.h"
 /****************************************************************************
 **
 ** Copyright (C) 2016 The Qt Company Ltd.
@@ -49,7 +49,7 @@
 **
 ****************************************************************************/
 
-#include "equipographlib.h"
+#include "equipograph.h"
 #include "connection.h"
 #include "equipo.h"
 
@@ -60,7 +60,7 @@
 EquipoGraphWidget::EquipoGraphWidget(QWidget *parent)
     : QGraphicsView(parent), timerId(0)
 {
-    QGraphicsScene *scene = new QGraphicsScene(this);
+    QGraphicsScene * scene = new QGraphicsScene(this);
     scene->setItemIndexMethod(QGraphicsScene::NoIndex);
     scene->setSceneRect(-200, -200, 400, 400);
     setScene(scene);
@@ -70,7 +70,7 @@ EquipoGraphWidget::EquipoGraphWidget(QWidget *parent)
     setTransformationAnchor(AnchorUnderMouse);
     scale(qreal(0.8), qreal(0.8));
     setMinimumSize(400, 400);
-    setWindowTitle(tr("Elastic Nodes"));
+    setWindowTitle(tr("Equipo Graph"));
 
 }
 

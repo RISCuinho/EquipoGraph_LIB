@@ -50,7 +50,7 @@
 
 #include "connection.h"
 #include "equipo.h"
-#include "equipographlib.h"
+#include "equipograph.h"
 
 #include <QGraphicsScene>
 #include <QGraphicsSceneMouseEvent>

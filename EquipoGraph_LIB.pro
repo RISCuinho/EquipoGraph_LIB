@@ -26,15 +26,18 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    equipographlib.cpp \
     equipo.cpp \
-    connection.cpp
+    connection.cpp \
+    equipomanager.cpp \
+    equipograph.cpp
 
 HEADERS += \
-    equipographlib.h \
     equipograph_lib_global.h \
     equipo.h \
-    connection.h
+    connection.h \
+    equipomanager.h \
+    equipograph.h \
+    eg_utils.h
 
 unix {
     target.path = /usr/lib

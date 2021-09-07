@@ -15,7 +15,7 @@ public:
 
     void itemMoved();
 
-public slots:
+public Q_SLOTS:
     void shuffle();
     void zoomIn();
     void zoomOut();
